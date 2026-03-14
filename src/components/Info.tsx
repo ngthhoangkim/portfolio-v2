@@ -1,87 +1,113 @@
+import Image from "next/image";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Facebook, Github, Mail } from "lucide-react";
+import { Github, Gitlab, Mail, Linkedin } from "lucide-react";
 
-export default function Info() {
+type TabKey = "about" | "projects" | "experience";
+
+interface InfoProps {
+  activeTab: TabKey;
+  onTabChange: (value: TabKey) => void;
+}
+
+export default function Info({ activeTab, onTabChange }: InfoProps) {
   return (
-    <header className="py-24">
-      <h1 className="text-5xl font-bold tracking-tight">Hoàng Kim</h1>
-      <p className="mt-3 text-lg font-medium text-slate-200">
-        Front End Engineer
-      </p>
-      <p className="mt-4 max-w-lg leading-normal text-slate-300">
-        I&apos;m a frontend engineer with a passion for building web
-        applications that are both functional and beautiful.
-      </p>
+    <header className="py-8 lg:py-0">
+      <div className="flex items-center justify-between gap-6">
+        <div>
+          <h1 className="text-5xl font-bold tracking-tight">Hoang Kim</h1>
+          <p className="mt-4 text-xl font-medium text-slate-200">
+            Frontend Developer
+          </p>
+        </div>
+
+        <div className="shrink-0">
+          <div className="relative h-36 w-36 overflow-hidden rounded-full border-2 border-white/20 ring-2 ring-white/5">
+            <Image
+              src="/1.jpg"
+              alt="Hoang Kim"
+              fill
+              className="object-cover"
+              sizes="144px"
+              priority
+            />
+          </div>
+        </div>
+      </div>
 
       <Tabs
-        defaultValue="about"
+        value={activeTab}
+        onValueChange={(value) => onTabChange(value as TabKey)}
         className="mt-10 hidden lg:flex lg:items-start lg:gap-6"
       >
-        <TabsList className="flex w-full gap-6 rounded-none border-b border-white/10 bg-transparent p-0 text-sm font-medium">
+        <TabsList className="flex w-full justify-start gap-8 rounded-none border-b border-white/10 bg-transparent p-0 text-sm font-medium">
           <TabsTrigger
             value="about"
             className="rounded-none border-b-2 border-transparent px-0 pb-3 text-white/60 transition data-[state=active]:border-white data-[state=active]:text-white data-[state=active]:font-bold"
-            asChild
           >
-            <a href="#about">About</a>
+            About
           </TabsTrigger>
           <TabsTrigger
             value="projects"
             className="rounded-none border-b-2 border-transparent px-0 pb-3 text-white/60 transition data-[state=active]:border-white data-[state=active]:text-white data-[state=active]:font-bold"
-            asChild
           >
-            <a href="#projects">Projects</a>
+            Projects
           </TabsTrigger>
           <TabsTrigger
             value="experience"
             className="rounded-none border-b-2 border-transparent px-0 pb-3 text-white/60 transition data-[state=active]:border-white data-[state=active]:text-white data-[state=active]:font-bold"
-            asChild
           >
-            <a href="#experience">Experience</a>
-          </TabsTrigger>
-          <TabsTrigger
-            value="contact"
-            className="rounded-none border-b-2 border-transparent px-0 pb-3 text-white/60 transition data-[state=active]:border-white data-[state=active]:text-white data-[state=active]:font-bold"
-            asChild
-          >
-            <a href="#contact">Contact</a>
+            Experience
           </TabsTrigger>
         </TabsList>
       </Tabs>
 
-      <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
-        <li className="mr-5 shrink-0 text-xs">
+      <ul className="ml-1 mt-8 flex items-center gap-5" aria-label="Social and contact links">
+        <li className="shrink-0">
           <a
             className="block text-slate-400 transition hover:text-white"
-            href="#"
+            href="https://github.com/ngthhoangkim"
             target="_blank"
             rel="noreferrer noopener"
-            aria-label="GitHub"
+            aria-label="GitHub (opens in a new tab)"
             title="GitHub"
           >
             <Github className="h-5 w-5" strokeWidth={1.5} />
           </a>
         </li>
-        <li className="mr-5 shrink-0 text-xs">
+        <li className="shrink-0">
           <a
             className="block text-slate-400 transition hover:text-white"
-            href="#"
+            href="https://gitlab.com/ngthhoangkim"
             target="_blank"
             rel="noreferrer noopener"
-            aria-label="Facebook (opens in a new tab)"
-            title="Facebook"
+            aria-label="GitLab (opens in a new tab)"
+            title="GitLab"
           >
-            <Facebook className="h-5 w-5" strokeWidth={1.5} />
+            <Gitlab className="h-5 w-5" strokeWidth={1.5} />
           </a>
         </li>
-        <li className="mr-5 shrink-0 text-xs">
+        <li className="shrink-0">
           <a
             className="block text-slate-400 transition hover:text-white"
-            href="mailto:"
-            aria-label="Send mail"
-            title="Email"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=nguyenthihoangkim07022004@gmail.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Mail (opens in a new tab)"
+            title="Mail"
           >
             <Mail className="h-5 w-5" strokeWidth={1.5} />
+          </a>
+        </li>
+        <li className="shrink-0">
+          <a
+            className="block text-slate-400 transition hover:text-white"
+            href="https://www.linkedin.com/in/nguy%E1%BB%85n-th%E1%BB%8B-ho%C3%A0ng-kim-10b2922a8/"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="LinkedIn (opens in a new tab)"
+            title="LinkedIn"
+          >
+            <Linkedin className="h-5 w-5" strokeWidth={1.5} />
           </a>
         </li>
       </ul>

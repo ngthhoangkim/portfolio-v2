@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "ngthhoangkim",
   description: "ngthhoangkim's portfolio",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
 };
 
