@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Github, Gitlab, Mail, Linkedin } from "lucide-react";
+import avatar from "../../public/1.jpg";
 
 type TabKey = "about" | "projects" | "experience";
 
@@ -23,7 +24,7 @@ export default function Info({ activeTab, onTabChange }: InfoProps) {
         <div className="shrink-0">
           <div className="relative h-36 w-36 overflow-hidden rounded-full border-2 border-white/20 ring-2 ring-white/5">
             <Image
-              src="/1.jpg"
+              src={avatar}
               alt="Hoang Kim"
               fill
               className="object-cover"
