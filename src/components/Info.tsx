@@ -21,7 +21,7 @@ export default function Info({ activeTab, onTabChange, resumeLink }: InfoProps) 
             Frontend Developer
           </p>
           <p className="mt-1 text-sm text-slate-400">
-            <span className="italic">2022 - 2026</span>
+            <span className="italic">2022 - 2025</span>
             {" | "}
             Vietnam Aviation Academy - VAA
           </p>
