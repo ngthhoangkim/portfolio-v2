@@ -8,9 +8,10 @@ type TabKey = "about" | "projects" | "experience";
 interface InfoProps {
   activeTab: TabKey;
   onTabChange: (value: TabKey) => void;
+  resumeLink?: string;
 }
 
-export default function Info({ activeTab, onTabChange }: InfoProps) {
+export default function Info({ activeTab, onTabChange, resumeLink }: InfoProps) {
   return (
     <header className="py-8 lg:py-0">
       <div className="flex items-center justify-between gap-6">
@@ -19,6 +20,22 @@ export default function Info({ activeTab, onTabChange }: InfoProps) {
           <p className="mt-4 text-xl font-medium text-slate-200">
             Frontend Developer
           </p>
+          <p className="mt-1 text-sm text-slate-400">
+            <span className="italic">2022 - 2026</span>
+            {" | "}
+            Vietnam Aviation Academy - VAA
+          </p>
+          {resumeLink && (
+            <a
+              href={resumeLink}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="mt-4 inline-flex items-center rounded-md border border-white/20 bg-white/5 px-4 py-2 text-sm font-medium text-slate-200 transition hover:bg-white/10 hover:text-white"
+              aria-label="Xem CV / Resume (mở tab mới)"
+            >
+              My Resume
+            </a>
+          )}
         </div>
 
         <div className="shrink-0">

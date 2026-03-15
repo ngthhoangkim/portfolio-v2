@@ -9,6 +9,8 @@ import { cn } from "../lib/utils";
 
 type TabKey = "about" | "projects" | "experience";
 
+const RESUME_LINK = "https://drive.google.com/file/d/1ycH85ERRj5qe-DIDuzKFSaxvZpt2f66g/view?usp=sharing";
+
 const experienceItems = [
   {
     role: "Fullstack Developer · Mai Tech",
@@ -47,7 +49,7 @@ export default function Home() {
     <div className="mx-auto flex min-h-screen max-w-screen-xl flex-col justify-center px-6 py-16">
       <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-20">
         <aside className="lg:w-[30rem]">
-          <Info activeTab={activeTab} onTabChange={setActiveTab} />
+          <Info activeTab={activeTab} onTabChange={setActiveTab} resumeLink={RESUME_LINK || undefined} />
         </aside>
         <main className={cn("flex-1 flex", isMobile ? "items-start" : "items-center")}>
           <div className="w-full max-w-2xl">
@@ -116,6 +118,10 @@ export default function Home() {
                           <span>Backend</span>
                         </div>
                         <div className="mt-3 flex flex-wrap gap-2">
+                          <span className="inline-flex items-center gap-1.5 rounded-full border border-violet-500/40 bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-200">
+                            <TechStackIcon name="nodejs" className="h-4 w-4" />
+                            <span>Node.js</span>
+                          </span>
                           <span className="inline-flex items-center gap-1.5 rounded-full border border-violet-500/40 bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-200">
                             <TechStackIcon name="supabase" className="h-4 w-4" />
                             <span>Supabase</span>
@@ -266,6 +272,10 @@ export default function Home() {
                             <span>Backend</span>
                           </div>
                           <div className="mt-3 flex flex-wrap gap-2">
+                            <span className="inline-flex items-center gap-1.5 rounded-full border border-violet-500/40 bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-200">
+                              <TechStackIcon name="nodejs" className="h-4 w-4" />
+                              <span>Node.js</span>
+                            </span>
                             <span className="inline-flex items-center gap-1.5 rounded-full border border-violet-500/40 bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-200">
                               <TechStackIcon name="supabase" className="h-4 w-4" />
                               <span>Supabase</span>
