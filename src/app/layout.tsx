@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "../components/css/globals.css";
 import Spotlight from "./spotlight";
 
@@ -33,6 +34,7 @@ export default function RootLayout({
       >
         <Spotlight />
         {children}
+        <Analytics />
       </body>
     </html>
   );
