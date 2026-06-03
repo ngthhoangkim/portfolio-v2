@@ -7,51 +7,25 @@ import Info from "../components/Info";
 import { useIsMobile } from "../hook/useMobile";
 import { cn } from "../lib/utils";
 
+import content from "../data/content.json";
+
 type TabKey = "about" | "projects" | "experience";
 
-const RESUME_LINK = "https://drive.google.com/file/d/1ycH85ERRj5qe-DIDuzKFSaxvZpt2f66g/view?usp=sharing";
+const RESUME_LINK = "https://drive.google.com/file/d/1zA1ylngeBGFnoj74ZhObEm2eAiAEd-6V/view?usp=drive_link";
 
-const experienceItems = [
-  {
-    role: "Fullstack Developer · Mai Tech",
-    period: "Apr 2025 – Present",
-    description:
-      "Worked on MaiTalk, an AI-driven English practice platform built with React and Supabase, serving more than 2000 registered users. Integrated REST APIs, implemented authentication flows, and managed real-time data using Supabase. Gained practical experience with backend data modeling and database queries while building scalable web features.",
-  },
-  {
-    role: "Frontend Developer · Freelancer",
-    period: "Apr 2025 – Present",
-    description:
-      "Built large-scale systems including a POS/Warehouse Management platform and an English Center Management system. Worked with complex business logic, multi-role access control, and relational data structures. Collaborated with backend developers to integrate APIs and translated business requirements into structured frontend solutions.",
-  },
-];
-
-const projectItems = [
-  {
-    title: "Mai Talk App",
-    description:
-      "An English speaking practice platform where users can practice daily speaking and improve their communication skills. Users can record their answers, receive AI based scoring and engage with the learning community.",
-    href: "https://maitalkapp.com",
-  },
-  {
-    title: "Portfolio Website (V1)",
-    description:
-      "A personal portfolio website built with Next.js and deployed on Vercel. The project showcases my software development work, including projects, technical skills, and experiments. It focuses on a clean UI, fast performance, and server-side rendering capabilities provided by Next.js.",
-    href: "https://ngthhoangkim-v1.vercel.app/",
-  },
-];
+const { experienceItems, projectItems } = content;
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabKey>("about");
   const isMobile = useIsMobile();
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-screen-xl flex-col justify-center px-6 py-16">
-      <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-20">
-        <aside className="lg:w-[30rem]">
+    <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <div className="lg:flex lg:justify-between lg:gap-4">
+        <aside className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
           <Info activeTab={activeTab} onTabChange={setActiveTab} resumeLink={RESUME_LINK || undefined} />
         </aside>
-        <main className={cn("flex-1 flex", isMobile ? "items-start" : "items-center")}>
+        <main className={cn("pt-24 lg:w-1/2 lg:py-24", isMobile ? "items-start" : "items-center")}>
           <div className="w-full max-w-2xl">
             {isMobile ? (
               <div className="space-y-16">

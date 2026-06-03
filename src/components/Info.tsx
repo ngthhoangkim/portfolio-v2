@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Github, Gitlab, Mail, Linkedin } from "lucide-react";
-import avatar from "../../public/1.jpg";
+import avatar from "../../public/2.jpg";
 
 type TabKey = "about" | "projects" | "experience";
 
@@ -119,7 +119,7 @@ export default function Info({ activeTab, onTabChange, resumeLink }: InfoProps) 
         <li className="shrink-0">
           <a
             className="block text-slate-400 transition hover:text-white"
-            href="https://www.linkedin.com/in/nguy%E1%BB%85n-th%E1%BB%8B-ho%C3%A0ng-kim-10b2922a8/"
+            href="https://www.linkedin.com/in/kim-nguyen-10b2922a8"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="LinkedIn (opens in a new tab)"

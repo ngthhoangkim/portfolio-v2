@@ -1,0 +1,51 @@
+{
+  "experienceItems": [
+    {
+      "role": "Fullstack Developer · Mai Tech",
+      "period": "Apr 2025 – Present",
+      "description": "Designed and developed internal web applications, backend services, and automation workflows. Worked on healthcare related features for Ngoc Minh Clinic, including automated report generation, and recently built finance and trading support tools such as Bitcoin price tracking dashboards and condition based notification systems."
+    },
+    {
+      "role": "Frontend Developer · Freelancer",
+      "period": "Apr 2025 – Present",
+      "description": "Developed education management systems for English centers such as TalkFirst and IELTS City. Built admin platforms for managing center operations, course payments, students, teachers, and class schedules, as well as student and teacher portals for schedules, attendance, classroom evaluation, and LMS learning activity workflows."
+    }
+  ],
+  "projectItems": [
+    {
+      "title": "Mai Talk",
+      "description": "An English speaking practice platform that allows users to record speaking answers and receive AI based scoring and feedback. Built fullstack features across user facing pages, backend logic, database workflows, API integration, English speaking practice, AI scoring, and user progress tracking.",
+      "href": "https://maitalkapp.com"
+    },
+    {
+      "title": "Ngoc Minh Healthcare Project",
+      "description": "A healthcare support tool that converts patient information files, X ray images, and related medical documents into PDF files for easier display on the user interface. Built a NodeJS based file processing tool and supported processed file preparation for more efficient UI display.",
+      "href": "https://pkdkngocminh.com.vn/?gad_source=1&gad_campaignid=22013061989&gbraid=0AAAAABrhU_nI5uHRoZ_r4ucWcBTrw0T7B&gclid=Cj0KCQjwof_QBhCgARIsADaMzOcgbJsO4-ofiEiHagRVMmaDvp9WPOCEdCjsLAstfRyy_SdbnTx6l7AaAiYLEALw_wcB"
+    },
+    {
+      "title": "Smart Campus System for TalkFirst",
+      "description": "A course management system for an English center, including admin, teacher, and student portals for daily academic and operational workflows. Developed frontend interfaces and client side logic for student management, class scheduling, attendance tracking, weekly student QC, course registration, study progress tracking, and academic operation management.",
+      "href": ""
+    },
+    {
+      "title": "Smart Campus System for IELTS City",
+      "description": "An English center management system designed to support admin, teacher, and student workflows for center operations and academic management. Built backend APIs and frontend interfaces for managing students, classes, schedules, staff operations, and academic workflows across multiple user roles. Technology: NextJS, NestJS, TailwindCSS, Material UI. Team: 3 members.",
+      "href": ""
+    },
+    {
+      "title": "LMS Platform",
+      "description": "A learning management system that allows students, teachers, center staff, and QC teams to create, manage, complete, and grade learning activities and exam practice tasks. Developed fullstack features for assignment creation, student submissions, teacher grading, QC workflows, learning progress management, and test simulation flows. Technology: NextJS, Shadcn/ui, NestJS. Team: 3 members.",
+      "href": ""
+    },
+    {
+      "title": "Financial Tracking Tools",
+      "description": "Internal finance and trading support tools for tracking Bitcoin prices, liquidation data, and market movements in real time. Built real time chart dashboards and condition based notification features to help the trading team monitor important market changes. Technology: NextJS, NodeJS, Supabase. Team: 1 member.",
+      "href": "https://liquidationv2.vercel.app/"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "A personal portfolio website showcasing software development experience, technical skills, and selected projects as a fullstack developer.",
+      "href": "https://ngthhoangkim-v2.vercel.app"
+    }
+  ]
+}
