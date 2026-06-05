@@ -43,9 +43,9 @@
       "href": "https://liquidationv2.vercel.app/"
     },
     {
-      "title": "Portfolio Website",
-      "description": "A personal portfolio website showcasing software development experience, technical skills, and selected projects as a fullstack developer.",
-      "href": "https://ngthhoangkim-v2.vercel.app"
+      "title": "Market Regime Research Dashboard",
+      "description": "An interactive financial research dashboard that visualizes and compares different market regime analysis methods. The project includes volatility based HMM analysis using Binance price and volume data, as well as a multi factor machine learning approach using Binance and Coinglass data including liquidation, funding rate, open interest, CVD, and price data. Built features for regime visualization, interactive chart exploration, market data dashboards, and model output interpretation across trending, volatile, cascade, and ranging market conditions.",
+      "href": "https://regime-tau.vercel.app/"
     }
   ]
 }
