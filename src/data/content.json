@@ -23,6 +23,11 @@
       "href": "https://pkdkngocminh.com.vn/?gad_source=1&gad_campaignid=22013061989&gbraid=0AAAAABrhU_nI5uHRoZ_r4ucWcBTrw0T7B&gclid=Cj0KCQjwof_QBhCgARIsADaMzOcgbJsO4-ofiEiHagRVMmaDvp9WPOCEdCjsLAstfRyy_SdbnTx6l7AaAiYLEALw_wcB"
     },
     {
+      "title": "Janus Deck",
+      "description": "Contributed to Janus Deck, a Next.js/React dashboard for creating, validating, backtesting, and live-monitoring Polymarket crypto up/down trading strategies. Built interfaces for strategy editing, parameter tuning, backtest submission, performance analysis, version tracking, authentication, and real-time market data visualization. Team: 2 member.",
+      "href": "https://janus-fe-ten.vercel.app/"
+    },
+    {
       "title": "Smart Campus System for TalkFirst",
       "description": "A course management system for an English center, including admin, teacher, and student portals for daily academic and operational workflows. Developed frontend interfaces and client side logic for student management, class scheduling, attendance tracking, weekly student QC, course registration, study progress tracking, and academic operation management. The link below showcases the Student Portal interface, which is one part of the broader SmartCampus system.",
       "href": "https://www.canva.com/design/DAHCNx8pQzw/LOGrc7cFkEetAEJvztolBA/view?utm_content=DAHCNx8pQzw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2bd59ad339"
@@ -41,11 +46,6 @@
       "title": "Financial Tracking Tools",
       "description": "Internal finance and trading support tools for tracking Bitcoin prices, liquidation data, and market movements in real time. Built real time chart dashboards and condition based notification features to help the trading team monitor important market changes. Technology: NextJS, NodeJS, Supabase. Team: 1 member.",
       "href": "https://liquidationv2.vercel.app/"
-    },
-    {
-      "title": "Market Regime Research Dashboard",
-      "description": "An interactive financial research dashboard that visualizes and compares different market regime analysis methods. The project includes volatility based HMM analysis using Binance price and volume data, as well as a multi factor machine learning approach using Binance and Coinglass data including liquidation, funding rate, open interest, CVD, and price data. Built features for regime visualization, interactive chart exploration, market data dashboards, and model output interpretation across trending, volatile, cascade, and ranging market conditions.",
-      "href": "https://regime-tau.vercel.app/"
     }
   ]
 }
