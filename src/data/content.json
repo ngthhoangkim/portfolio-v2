@@ -1,4 +1,54 @@
 {
+  "profile": {
+    "name": "Hoang Kim",
+    "role": "Frontend Developer",
+    "education": "Vietnam Aviation Academy - VAA",
+    "educationPeriod": "2022 - 2025",
+    "summary": "Hi, I'm Kim. I am a Frontend Developer specializing in React, Next.js, TypeScript and TailwindCSS. I have experience building scalable web applications and working with real world systems across different domains. Currently, I work as a developer at Mai Tech and also take on freelance projects, developing and maintaining modern web applications."
+  },
+  "techStack": [
+    {
+      "label": "Frontend",
+      "icon": "code",
+      "accent": "sky",
+      "items": [
+        { "name": "React", "icon": "react" },
+        { "name": "Next.js", "icon": "nextjs2" },
+        { "name": "TailwindCSS", "icon": "tailwindcss" },
+        { "name": "Zustand", "icon": "zustand" }
+      ]
+    },
+    {
+      "label": "Language",
+      "icon": "braces",
+      "accent": "emerald",
+      "items": [
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "JavaScript", "icon": "js" }
+      ]
+    },
+    {
+      "label": "Backend",
+      "icon": "server",
+      "accent": "violet",
+      "items": [
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "Supabase", "icon": "supabase" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "MySQL", "icon": "mysql" },
+        { "name": "MongoDB", "icon": "mongodb" }
+      ]
+    },
+    {
+      "label": "Tools",
+      "icon": "wrench",
+      "accent": "amber",
+      "items": [
+        { "name": "Git", "icon": "git" },
+        { "name": "Postman", "icon": "postman" }
+      ]
+    }
+  ],
   "experienceItems": [
     {
       "role": "Fullstack Developer · Mai Tech",
