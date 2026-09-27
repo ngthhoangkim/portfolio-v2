@@ -1,4 +1,54 @@
 {
+  "profile": {
+    "name": "Hoang Kim",
+    "role": "Frontend Developer",
+    "education": "Vietnam Aviation Academy - VAA",
+    "educationPeriod": "2022 - 2025",
+    "summary": "Hi, I'm Kim. I am a Frontend Developer specializing in React, Next.js, TypeScript and TailwindCSS. I have experience building scalable web applications and working with real world systems across different domains. Currently, I work as a developer at Mai Tech and also take on freelance projects, developing and maintaining modern web applications."
+  },
+  "techStack": [
+    {
+      "label": "Frontend",
+      "icon": "code",
+      "accent": "sky",
+      "items": [
+        { "name": "React", "icon": "react" },
+        { "name": "Next.js", "icon": "nextjs2" },
+        { "name": "TailwindCSS", "icon": "tailwindcss" },
+        { "name": "Zustand", "icon": "zustand" }
+      ]
+    },
+    {
+      "label": "Language",
+      "icon": "braces",
+      "accent": "emerald",
+      "items": [
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "JavaScript", "icon": "js" }
+      ]
+    },
+    {
+      "label": "Backend",
+      "icon": "server",
+      "accent": "violet",
+      "items": [
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "Supabase", "icon": "supabase" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "MySQL", "icon": "mysql" },
+        { "name": "MongoDB", "icon": "mongodb" }
+      ]
+    },
+    {
+      "label": "Tools",
+      "icon": "wrench",
+      "accent": "amber",
+      "items": [
+        { "name": "Git", "icon": "git" },
+        { "name": "Postman", "icon": "postman" }
+      ]
+    }
+  ],
   "experienceItems": [
     {
       "role": "Fullstack Developer · Mai Tech",
@@ -23,29 +73,14 @@
       "href": "https://pkdkngocminh.com.vn/?gad_source=1&gad_campaignid=22013061989&gbraid=0AAAAABrhU_nI5uHRoZ_r4ucWcBTrw0T7B&gclid=Cj0KCQjwof_QBhCgARIsADaMzOcgbJsO4-ofiEiHagRVMmaDvp9WPOCEdCjsLAstfRyy_SdbnTx6l7AaAiYLEALw_wcB"
     },
     {
-      "title": "Janus Deck",
-      "description": "Contributed to Janus Deck, a Next.js/React dashboard for creating, validating, backtesting, and live-monitoring Polymarket crypto up/down trading strategies. Built interfaces for strategy editing, parameter tuning, backtest submission, performance analysis, version tracking, authentication, and real-time market data visualization. Team: 2 member.",
-      "href": "https://janus-fe-ten.vercel.app/"
-    },
-    {
-      "title": "Smart Campus System for TalkFirst",
-      "description": "A course management system for an English center, including admin, teacher, and student portals for daily academic and operational workflows. Developed frontend interfaces and client side logic for student management, class scheduling, attendance tracking, weekly student QC, course registration, study progress tracking, and academic operation management. The link below showcases the Student Portal interface, which is one part of the broader SmartCampus system.",
+      "title": "Smart Campus System for TalkFirst and IELTS City",
+      "description": "A management system built for two English centers, TalkFirst and IELTS City, covering admin, teacher, and student portals for daily academic and operational workflows. Built frontend interfaces and backend APIs for student management, class scheduling, attendance tracking, weekly student QC, course registration, study progress tracking, staff operations, and academic operation management across multiple user roles. Technology: NextJS, NestJS, TailwindCSS, Material UI. Team: 3 members. The link below showcases the Student Portal interface, which is one part of the broader SmartCampus system.",
       "href": "https://www.canva.com/design/DAHCNx8pQzw/LOGrc7cFkEetAEJvztolBA/view?utm_content=DAHCNx8pQzw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2bd59ad339"
-    },
-    {
-      "title": "Smart Campus System for IELTS City",
-      "description": "An English center management system designed to support admin, teacher, and student workflows for center operations and academic management. Built backend APIs and frontend interfaces for managing students, classes, schedules, staff operations, and academic workflows across multiple user roles. Technology: NextJS, NestJS, TailwindCSS, Material UI. Team: 3 members.",
-      "href": ""
     },
     {
       "title": "LMS Platform",
       "description": "A learning management system that allows students, teachers, center staff, and QC teams to create, manage, complete, and grade learning activities and exam practice tasks. Developed fullstack features for assignment creation, student submissions, teacher grading, QC workflows, learning progress management, and test simulation flows. Technology: NextJS, Shadcn/ui, NestJS. Team: 3 members.",
       "href": ""
-    },
-    {
-      "title": "Financial Tracking Tools",
-      "description": "Internal finance and trading support tools for tracking Bitcoin prices, liquidation data, and market movements in real time. Built real time chart dashboards and condition based notification features to help the trading team monitor important market changes. Technology: NextJS, NodeJS, Supabase. Team: 1 member.",
-      "href": "https://liquidationv2.vercel.app/"
     }
   ]
 }

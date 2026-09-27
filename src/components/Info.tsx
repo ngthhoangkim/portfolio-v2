@@ -2,6 +2,9 @@ import Image from "next/image";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Github, Gitlab, Mail, Linkedin } from "lucide-react";
 import avatar from "../../public/2.jpg";
+import content from "../data/content.json";
+
+const { profile } = content;
 
 type TabKey = "about" | "projects" | "experience";
 
@@ -16,14 +19,14 @@ export default function Info({ activeTab, onTabChange, resumeLink }: InfoProps) 
     <header className="py-8 lg:py-0">
       <div className="flex items-center justify-between gap-6">
         <div>
-          <h1 className="text-5xl font-bold tracking-tight">Hoang Kim</h1>
+          <h1 className="text-5xl font-bold tracking-tight">{profile.name}</h1>
           <p className="mt-4 text-xl font-medium text-slate-200">
-            Frontend Developer
+            {profile.role}
           </p>
           <p className="mt-1 text-sm text-slate-400">
-            <span className="italic">2022 - 2025</span>
+            <span className="italic">{profile.educationPeriod}</span>
             {" | "}
-            Vietnam Aviation Academy - VAA
+            {profile.education}
           </p>
           {resumeLink && (
             <a
@@ -31,7 +34,7 @@ export default function Info({ activeTab, onTabChange, resumeLink }: InfoProps) 
               target="_blank"
               rel="noreferrer noopener"
               className="mt-4 inline-flex items-center rounded-md border border-white/20 bg-white/5 px-4 py-2 text-sm font-medium text-slate-200 transition hover:bg-white/10 hover:text-white"
-              aria-label="Xem CV / Resume (mở tab mới)"
+              aria-label="My Resume (opens in a new tab)"
             >
               My Resume
             </a>
@@ -42,7 +45,7 @@ export default function Info({ activeTab, onTabChange, resumeLink }: InfoProps) 
           <div className="relative h-36 w-36 overflow-hidden rounded-full border-2 border-white/20 ring-2 ring-white/5">
             <Image
               src={avatar}
-              alt="Hoang Kim"
+              alt={profile.name}
               fill
               className="object-cover"
               sizes="144px"

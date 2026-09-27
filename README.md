@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# portfolio-v2
 
-## Getting Started
+Personal portfolio of **Hoang Kim** — Frontend Developer.
 
-First, run the development server:
+🔗 **Live:** https://ngthhoangkim-v2.vercel.app
+
+## Tech stack
+
+- **Next.js 16** (App Router) + **React 19**
+- **TypeScript**
+- **Tailwind CSS v4** + **shadcn/ui** (Radix primitives)
+- **lucide-react** / **tech-stack-icons** for icons
+- **Vercel Analytics**
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build   # production build
+npm run start   # serve the production build
+npm run lint    # eslint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+```
+src/
+├── app/
+│   ├── layout.tsx            # fonts, metadata (SEO + Open Graph), analytics
+│   ├── page.tsx              # page shell: sidebar + tabbed content
+│   ├── opengraph-image.tsx   # social share card, generated at build time
+│   └── spotlight.tsx         # cursor-following glow
+├── components/
+│   ├── Info.tsx              # sidebar: name, avatar, tabs, social links
+│   ├── sections/             # About / Projects / Experience
+│   ├── ui/                   # shadcn/ui components
+│   └── css/globals.css       # Tailwind theme + spotlight styles
+├── data/
+│   └── content.json          # all site content
+└── lib/utils.ts              # cn() class helper
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Editing the content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+All text lives in [`src/data/content.json`](src/data/content.json) — no need to
+touch any component:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Key | What it controls |
+| --- | --- |
+| `profile` | Name, role, education, the About paragraph |
+| `techStack` | Tech Stack chips, grouped by category |
+| `experienceItems` | Experience entries |
+| `projectItems` | Project entries (`href` may be `""` to hide the link) |
 
-## Deploy on Vercel
+`profile.summary` is reused as the meta description and the Open Graph
+description, so it is the one paragraph worth keeping polished.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Adding a tech stack chip
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Add an entry to the relevant group's `items`:
+
+```json
+{ "name": "Zod", "icon": "zod" }
+```
+
+`icon` is a [`tech-stack-icons`](https://www.npmjs.com/package/tech-stack-icons)
+name. A group's `accent` must be one of `sky`, `emerald`, `violet` or `amber`,
+and `icon` one of `code`, `braces`, `server`, `wrench`.
+
+## Responsive behaviour
+
+Below `lg` (1024px) all three sections are stacked on one page. From `lg` up the
+sidebar tabs pick one section at a time. The switch is pure CSS, so every
+section stays in the server-rendered HTML for crawlers and there is no layout
+flash on load.
+
+## Deployment
+
+Deployed on Vercel — pushes to `main` ship to production.
