@@ -34,9 +34,7 @@
       "items": [
         { "name": "Node.js", "icon": "nodejs" },
         { "name": "Supabase", "icon": "supabase" },
-        { "name": "PostgreSQL", "icon": "postgresql" },
-        { "name": "MySQL", "icon": "mysql" },
-        { "name": "MongoDB", "icon": "mongodb" }
+        { "name": "PostgreSQL", "icon": "postgresql" }
       ]
     },
     {
@@ -53,7 +51,7 @@
     {
       "role": "Fullstack Developer · Mai Tech",
       "period": "Apr 2025 – Present",
-      "description": "Designed and developed internal web applications, backend services, and automation workflows. Worked on healthcare related features for Ngoc Minh Clinic, including automated report generation, and recently built finance and trading support tools such as Bitcoin price tracking dashboards and condition based notification systems."
+      "description": "Built the front-end for Grandix, a One Piece TCG price-tracking platform, using TanStack Start (React 19, Vite) and Tailwind CSS v4: card search, price-history charts, portfolio tracking, and a market overview. Also worked on healthcare-related features for Ngoc Minh Clinic, including a Node.js-based tool to convert patient files and X-ray images into PDFs for UI display."
     },
     {
       "role": "Frontend Developer · Freelancer",
@@ -63,9 +61,9 @@
   ],
   "projectItems": [
     {
-      "title": "Mai Talk",
-      "description": "An English speaking practice platform that allows users to record speaking answers and receive AI based scoring and feedback. Built fullstack features across user facing pages, backend logic, database workflows, API integration, English speaking practice, AI scoring, and user progress tracking.",
-      "href": "https://maitalkapp.com"
+      "title": "Grandix",
+      "description": "A One Piece TCG price-tracking platform. Built the front-end with TanStack Start (React 19, Vite) and Tailwind CSS v4: card search, price-history charts, portfolio tracking, and a market overview (top gainers/losers). Created reusable, responsive UI components and worked on the data layer with Supabase/PostgreSQL, including server-side price scraping.",
+      "href": "https://sneaker-dunk-watch.lovable.app/card-list?q=&page=1&limit=50&view=grid&setCodes=%5B%5D&cardTypes=%5B%5D&languages=%5B%5D&variants=%5B%5D&rarities=%5B%5D"
     },
     {
       "title": "Ngoc Minh Healthcare Project",
@@ -73,13 +71,13 @@
       "href": "https://pkdkngocminh.com.vn/?gad_source=1&gad_campaignid=22013061989&gbraid=0AAAAABrhU_nI5uHRoZ_r4ucWcBTrw0T7B&gclid=Cj0KCQjwof_QBhCgARIsADaMzOcgbJsO4-ofiEiHagRVMmaDvp9WPOCEdCjsLAstfRyy_SdbnTx6l7AaAiYLEALw_wcB"
     },
     {
-      "title": "Smart Campus System for TalkFirst and IELTS City",
-      "description": "A management system built for two English centers, TalkFirst and IELTS City, covering admin, teacher, and student portals for daily academic and operational workflows. Built frontend interfaces and backend APIs for student management, class scheduling, attendance tracking, weekly student QC, course registration, study progress tracking, staff operations, and academic operation management across multiple user roles. Technology: NextJS, NestJS, TailwindCSS, Material UI. Team: 3 members. The link below showcases the Student Portal interface, which is one part of the broader SmartCampus system.",
+      "title": "Smart Campus – Admin Portal",
+      "description": "An English center management system built for TalkFirst and IELTS City. Developed admin screens with Next.js 15, Material UI v6, and Zustand: student management, courses and payments, class scheduling (calendar UI), attendance, and teacher profiles. Analysed business flows with the center and wrote specs for the back-end team, then implemented the matching UI. Technology: Next.js, NestJS, TailwindCSS, Material UI. Team: 3 members.",
       "href": "https://www.canva.com/design/DAHCNx8pQzw/LOGrc7cFkEetAEJvztolBA/view?utm_content=DAHCNx8pQzw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2bd59ad339"
     },
     {
-      "title": "LMS Platform",
-      "description": "A learning management system that allows students, teachers, center staff, and QC teams to create, manage, complete, and grade learning activities and exam practice tasks. Developed fullstack features for assignment creation, student submissions, teacher grading, QC workflows, learning progress management, and test simulation flows. Technology: NextJS, Shadcn/ui, NestJS. Team: 3 members.",
+      "title": "Smart Campus – LMS Platform",
+      "description": "An IELTS practice and grading system for TalkFirst and IELTS City. Built the front-end with Next.js 15 and Shadcn/ui for five user roles (student, teacher, QC, academic, operations): test simulation, rubric scoring, and bulk CSV import. Mapped requirements into user flows and data models and coordinated API design with the NestJS back-end team. Technology: Next.js, Shadcn/ui, NestJS. Team: 3 members.",
       "href": ""
     }
   ]
