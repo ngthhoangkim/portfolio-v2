@@ -10,7 +10,7 @@ import { cn } from "../lib/utils";
 type TabKey = "about" | "projects" | "experience";
 
 const RESUME_LINK =
-  "https://drive.google.com/file/d/1zA1ylngeBGFnoj74ZhObEm2eAiAEd-6V/view?usp=drive_link";
+  "https://drive.google.com/file/d/18nZFrAoC5rdJA0SO1V5boI3Mt-9jBggC/view";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabKey>("about");
